@@ -12,10 +12,9 @@ HISTORY = "/home/my5t3ry/.zsh_history"
 app = Flask(__name__)
 
 words = []
-probs = []
+probs = {}
 word_freq_dict = None
 Total = None
-
 
 @app.route('/correct', methods=['POST'])
 def get_suggestions():
