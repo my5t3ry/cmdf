@@ -16,6 +16,7 @@ probs = []
 word_freq_dict = None
 Total = None
 
+
 @app.route('/correct', methods=['POST'])
 def get_suggestions():
   global words
