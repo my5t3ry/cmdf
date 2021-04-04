@@ -1,6 +1,6 @@
 # cmdf
 
-this thiing will fix misspelled commands by learning from your history
+this thing will fix misspelled commands by learning from your history
 
 ```
 [n0x] cmdf>  ccd python                                    
