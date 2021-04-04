@@ -53,7 +53,7 @@ def init():
       cur = word.decode(encoding="utf-8").split(";")[1]
       words.append(cur)
     except Exception as e:
-      print("shit ['%s']".format(e))
+      print("shit ['{}']".format(e))
 
   V = numpy.array(words)
   unique, counts = numpy.unique(V, return_counts=True)
