@@ -1,0 +1,12 @@
+[Unit]
+Description=cmdf-daemon
+After=syslog.target
+
+[Service]
+Type=simple
+User=my5t3ry
+WorkingDirectory=/home/my5t3ry/codeBase/python/cmdf/
+ExecStart=/home/my5t3ry/codeBase/python/cmdf/cmdf.py
+Restart=always
+RestartSec=3
+
