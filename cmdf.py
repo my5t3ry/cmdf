@@ -52,10 +52,8 @@ def init():
     try:
       cur = word.decode(encoding="utf-8").split(";")[1]
       words.append(cur)
-      if "sshc" in cur:
-        print(cur)
     except Exception as e:
-      print("shit")
+      print("shit ['%s']".format(e))
 
   V = numpy.array(words)
   unique, counts = numpy.unique(V, return_counts=True)
