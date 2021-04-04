@@ -47,7 +47,6 @@ def init():
   global Total
   words_str = subprocess.check_output(
       "echo \"$(cat %s)\"" % HISTORY, shell=True)
-  print(words_str)
 
   for word in words_str.splitlines():
     try:
