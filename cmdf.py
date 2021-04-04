@@ -31,13 +31,13 @@ def get_suggestions():
   similarities = [(Levenshtein.distance(v, cmd)) for v in
                   word_freq_dict.keys()]
   df = pd.DataFrame.from_dict(probs, orient='index').reset_index()
-  df = df.rename(columns={ 0: 'Prob'})
+  df = df.rename(columns={0: 'Prob'})
   df['Similarity'] = similarities
-  df['cmd'] =  word_freq_dict.keys()
+  df['cmd'] = word_freq_dict.keys()
   output = df.sort_values(['Similarity'], ascending=True)
 
-  return "{\"cmd\":\"" + list(output.head(1).to_dict('dict')["cmd"].values())[0]+"\"}"
-
+  return "{\"cmd\":\"" + list(output.head(1).to_dict('dict')["cmd"].values())[
+    0] + "\"}"
 
 
 def init():
