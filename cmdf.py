@@ -61,7 +61,6 @@ def init():
   word_freq_dict = {}
   word_freq_dict = Counter(words)
   print(word_freq_dict.most_common()[0:10])
-  probs = {}
   Total = sum(word_freq_dict.values())
 
 
