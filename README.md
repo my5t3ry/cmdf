@@ -1,6 +1,6 @@
 # cmdf
 
-this thing will fix misspelled commands by learning from your history. i did use it for years, it just works.
+this thing will fix misspelled commands by learning from your history.
 
 ```
 [n0x] ~  pingg shitkatpult.org
